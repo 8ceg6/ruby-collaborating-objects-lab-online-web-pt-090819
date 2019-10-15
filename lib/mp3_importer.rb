@@ -1,5 +1,5 @@
 class MP3Importer 
-attr_accessor : path 
+attr_accessor :path 
 
 
   def initialize(path)
@@ -10,4 +10,3 @@ attr_accessor : path
   Dir.entries(path.select{|entry| entry.include?(".mp3")}
   end
 end 
-end
